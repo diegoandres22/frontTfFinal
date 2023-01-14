@@ -1,0 +1,48 @@
+
+<!-- nav -->
+<nav class="navbar " id="navbar">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+            <img src="./../../assets/imagenes/argentina.png">
+        </a>
+
+        <!-- Button modal -->
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a
+                routerLink="/index">ir al inicio</a>
+        </button>
+
+    </div>
+</nav>
+
+
+
+<div class="contenedor-experiencias" id="EXPERIENCIAS">
+    <div class="container text-center">
+       <br>
+       <br>
+
+        <div class="row text-center ">
+            <div class="col">
+                <h2> Nueva soft skill</h2>
+            </div>
+
+        </div>
+        <br>
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="mb-3">
+                <label form="img_soft_skill"> logo de la skill </label>
+                <input type="text" class="form-control" id="img_soft_skill" name="img_soft_skill"
+                    placeholder="url del logo" [(ngModel)]="img_soft_skill" required>
+            </div>
+            <div class="mb-3">
+                <label for="nombre_soft_skill">nombre de la soft skill</label>
+                <input type="text" class="form-control" placeholder="nombre de la soft skill" id="nombre_soft_skill"
+                    name="nombre_soft_skill" [(ngModel)]="nombre_soft_skill" required>
+            </div>
+
+
+            <button class="btn btn-success"> Añadir nueva skill </button>
+        </form>
+
+    </div>
+</div>

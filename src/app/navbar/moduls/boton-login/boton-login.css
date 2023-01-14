@@ -1,0 +1,10 @@
+@media (max-width: 500px) {
+
+
+  .botonabre {
+    position: fixed;
+    top: 4vh;
+    right: 50px;
+    font-size: .9em;
+  }
+}

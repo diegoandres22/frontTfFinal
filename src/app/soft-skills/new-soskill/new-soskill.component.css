@@ -1,0 +1,67 @@
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+/* navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    background-color: rgb(13, 9, 78);
+    width: 100%;
+    height: 75px;
+    z-index: 10000;
+}
+
+
+/* logo nav */
+.container-fluid a img {
+    user-select: none;
+    width: 9em;
+
+}
+
+
+.nav-item {
+
+    display: flex;
+    margin: auto;
+
+}
+
+.nav-item a {
+    color: aliceblue !important;
+}
+
+/* hover de las redes sociales */
+#instagram:hover {
+    background: linear-gradient(198deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border-radius: 10px;
+    color: black !important;
+}
+#linkedin:hover {
+    background: linear-gradient(198deg, rgb(11, 0, 172) 0%, rgb(78, 80, 238) 50%, rgb(3, 0, 179) 100%);
+    border-radius: 10px;
+    color: black !important;
+}
+#Github:hover {
+    background: linear-gradient(198deg, rgb(3, 0, 41) 0%, rgb(78, 80, 238) 50%, rgb(1, 0, 56) 100%);
+    border-radius: 10px;
+    color: black !important;
+}
+/* experiencias laborales */
+.contenedor-experiencias {
+   
+    padding: 50px 100px 0;
+    
+    
+}
+.contenedor-experiencias h2 {
+   
+    color: aliceblue;
+    
+    
+}
+label{
+    color: aliceblue;
+}

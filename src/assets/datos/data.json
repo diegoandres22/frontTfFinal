@@ -1,0 +1,143 @@
+{
+    "nombre": "Diego moya bbrito",
+    "titulo": "Desarrollador Web Full Stack",
+    "parrafo1": "Que desde pequeño, quería ser como Tom Cruise, siempre con las ganas de saber de todo un poco, deambulando entre distintas profesiones. Nací en Venezuela, en mayo en el año 2000. Mi Infancia Estuvo Llena De diferentes oficios y profesiones, lo que me dificultó reconocer en cuál enfocarme. Fui desde Disk Jockey (DJ) en una agencia de festejos hasta técnico en reparación de equipos móviles entre otras actividades con fines de lucro. De esta forma descubrí que nada de lo que había hecho,había despertado mi vocación; No había explotado mi potencial hasta entonces.",
+    "parrafo2": "En el año 2020, estando en Argentina, me adentré en el mundo informático, conocí diferentes lenguajes de programación y orienté mis estudios a esa área. Me enfoqué en armar un stack tecnológico y estudiarlo. Actualmente, una vez culminadas las capacitaciones que me proporcionó la Cámara de la Industria Argentina del Software, puedo decir que mi objetivo es, ahora, explotar mi creatividad, ejercitar mi cerebro al máximo para lograr la resolución de problemas día a día y hacer de la programación parte de mi vida.",
+    "imgPerfil": "./../../assets/imagenes/diego 2.png",
+    "trabajo": [
+        {
+            "puesto": "Encargado de tienda",
+            "imgLogo": "./../../assets/imagenes/res.png",
+            "empresa": "NOBS. S. A.",
+            "tareas": "Desposte, preparación, almacenaje y exposición de la carne en la tienda, establecer objetivos de ventas, manejo de personal, mantener la relación con los clientes, etc.",
+            "fechaI": "julio 2018 ",
+            "fechaF": "abril 2021"
+        },
+        {
+            "puesto": "Repartidor ",
+            "imgLogo": "./../../assets/imagenes/pedidosya.png",
+            "empresa": "Pedidos Ya",
+            "tareas": "Encargado de realizar el transporte y distribución de productos desde el lugar de elaboración, venta o amlacenamiento hasta el domicilio marcado por el usuario desde la aplicación remota, en optimas condiciones y en margenes de tiempo previamente establecidas.",
+            "fechaI": "abril 2021 ",
+            "fechaF": "actualidad"
+        }
+    ],
+    "educacion": [
+        {
+            "colegio": "U. E. P. Congreso de Angostura ",
+            "imgLogo": "./../../assets/imagenes/congreso.jpg",
+            "titulo": "Básica de Primaria ",
+            "fechaI": "2010",
+            "fechaF": "2015"
+        },
+        {
+            "colegio": "L. B. José María España",
+            "imgLogo": "./../../assets/imagenes/jose.png",
+            "titulo": "Bachiller en ciencias",
+            "fechaI": "2015",
+            "fechaF": "2016"
+        },
+        {
+            "colegio": "Universidad Simón Bolivar",
+            "imgLogo": "./../../assets/imagenes/usb.jpg",
+            "titulo": "mecánica electronica(Sin concluir)",
+            "fechaI": "2016",
+            "fechaF": "2017"
+        }
+    ],
+    "softskills": [
+        {
+            "skill": "Resolución de problemas ",
+            "imgskill": "./../../assets/imagenes/skills/solucion.png"
+        },
+        {
+            "skill": "Trabajo en equipo",
+            "imgskill": "./../../assets/imagenes/skills/equipo.png"
+        },
+        {
+            "skill": "Gestión de personal",
+            "imgskill": "./../../assets/imagenes/skills/gestion.png"
+        },
+        {
+            "skill": "Creativo ",
+            "imgskill": "./../../assets/imagenes/skills/creatividad.png"
+        },
+        {
+            "skill": "Eficaz ",
+            "imgskill": "./../../assets/imagenes/skills/eficaz.png"
+        },
+        {
+            "skill": "Flexible ",
+            "imgskill": "./../../assets/imagenes/flexibilidad.png"
+        },
+        {
+            "skill": "Empático ",
+            "imgskill": "./../../assets/imagenes/skills/empatia.png"
+        },
+        {
+            "skill": "Proactivo ",
+            "imgskill": "./../../assets/imagenes/skills/proactivo.png"
+        }
+    ],
+    "hardSkills": [
+        {
+            "skill": "HTML ",
+            "imgskill": "./../../assets/imagenes/html.png",
+            "color": "#FE5800 "
+        },
+        {
+            "skill": "CSS  ",
+            "imgskill": "./../../assets/imagenes/tecno skills/css.png",
+            "color": "#1300FF"
+        },
+        {
+            "skill": "JAVASCRIPT ",
+            "imgskill": "./../../assets/imagenes/js.png",
+            "color": "#F7FF00"
+        },
+        {
+            "skill": "BOOSTRAP  ",
+            "imgskill": "./../../assets/imagenes/tecno skills/Bootstrap.png",
+            "color": "#8F00FF"
+        },
+        {
+            "skill": "MYSQL",
+            "imgskill": "./../../assets/imagenes/tecno skills/MySQL-Logo.png",
+            "color": "#5FAFCB"
+        },
+        {
+            "skill": "ANGULAR",
+            "imgskill": "./../../assets/imagenes/tecno skills/angular.png",
+            "color": "#FF0000"
+        },
+        {
+            "skill": "GITHUB",
+            "imgskill": "./../../assets/imagenes/github.png",
+            "color": "#ffffff "
+        },
+        {
+            "skill": "SPRING BOOT ",
+            "imgskill": "./../../assets/imagenes/tecno skills/springbot.png",
+            "color": "#11BE00"
+        }
+    ],
+    "proyecto": [
+        {
+            "url": "https://www.instagram.com/diego.andresdj/?hl=es",
+            "img1": "./../../assets/imagenes/proyectoUno.png",
+            "img2": "./../../assets/imagenes/proyectoUno.png",
+            "img3": "./../../assets/imagenes/proyectoUno.png"
+        },
+        {
+            "url": "https://www.instagram.com/diego.andresdj/?hl=es ",
+            "img1": "./../../assets/imagenes/proyectoUnodos.png",
+            "img2": "./../../assets/imagenes/proyectoUnodos.png",
+            "img3": "./../../assets/imagenes/proyectoUnodos.png"
+        },{
+            "url": "https://www.instagram.com/diego.andresdj/?hl=es ",
+            "img1": "./../../assets/imagenes/proyectoUnotres.png",
+            "img2": "./../../assets/imagenes/proyectoUnotres.png",
+            "img3": "./../../assets/imagenes/proyectoUnotres.png"
+        }
+    ]
+}

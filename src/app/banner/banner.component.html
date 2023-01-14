@@ -1,0 +1,41 @@
+<p>banner works!</p>
+<!-- baner con hechizero -->
+<div class="baner" id="BANER">
+    <div class="imagen-baner"  *ngFor="let die of dieguito">
+       <img class="imagen-banerdefi" [src]="die.imgbanner" alt=""> <!-- ./../../assets/imagenes/baner.jpg -->
+        <div class="contenedor-imagen">
+            <div class="imagen">
+                <img class="man" src="./../../assets/imagenes/blue.png" alt="">
+            </div>
+        </div>
+
+        <div class="contenedor-hechizos">
+            <div class="hechizos ">
+                <img class="hechizo1 " src="./../../assets/imagenes/8 logos.png" alt="">
+
+            </div>
+        </div>
+        <div class="contenedor-hechizos">
+            <div class="hechizos ">
+
+                <img class="hechizo2 " src="./../../assets/imagenes/6 logos.png " alt="">
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-parrafo" *ngFor="let die of dieguito">
+        <div class="parrafo">
+            <p class="hi">HOLA</p>
+            <p> Acá podrás ver mi trayecto de </p>
+            <p>formación como </p>
+            <div class="contienetodo">
+                <div class="contienemeno">
+                    <h2>profesional</h2>
+                    <h2>programador</h2>
+                    <h2>desarrollador</h2>
+                    <h2>codificador</h2>
+                </div>
+            </div>
+            <a [href]="die.curriculum" target="_blank" class="buttom"> descargar CV</a>
+        </div>
+    </div>
+</div>

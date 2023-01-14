@@ -1,0 +1,47 @@
+
+
+.contenedor-estudios {
+    
+    color: aliceblue;
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.estudios {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+   
+}
+.estudios ul li{
+
+list-style: none;
+}
+
+.bx {
+   font-size: 2em;
+}
+ ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;  
+}
+.container {
+    gap: 2em;
+}
+.container img{
+    border-radius: 10px;
+}
+#exampleModalestu{
+    top: 20vh;
+    color: black;
+}
+.fileTituloYboto{
+    display: flex;
+align-items: center;
+justify-content: center;
+gap: .5em;
+
+}

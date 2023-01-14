@@ -1,0 +1,83 @@
+<!-- eXperiencias laborales -->
+<div class="contenedor-experiencias" id="EXPERIENCIAS">
+    <div class="experiencias">
+        <div class="container text-center">
+            <div class=" text-center fileTituloYboto">
+
+                <h2> Experiencias laborales </h2>
+                <button routerLink="/newExpe" *ngIf="isLogged" type="button" class="btn btn-outline-info">  
+                    <i *ngIf="isLogged" class=' bx bx-plus-circle'></i>
+                </button>
+                
+
+            </div>
+        </div>
+
+        <ul class="conteneabuelo">
+            <li *ngFor="let trabajo of exPe">
+                <div class="container ">
+                    <div class="row ">
+                        <div class=" col-12 col-sm-2 " >
+                            <img class="img-fluid" [src]="trabajo.imgtrabajo">
+                        </div>
+                        <div class=" col-12 col-sm-10 ">
+                            <div class="row">
+                                <div class="col">
+                                    <h5>{{trabajo.puesto}}</h5>
+                                </div>
+                                <div class="col">
+                                    <h6> {{trabajo.fechainiyfina}} </h6>
+                                </div>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn col text-center btn-outline-danger"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModalex" (click)="tomaId(trabajo.id)"
+                                    *ngIf="isLogged">
+                                    <i *ngIf="isLogged" class='bx bxs-trash '></i>
+                                </button>
+ 
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalex" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content text-center">
+                                            <div class="modal-header text-center">
+                                                <h1 class=" text-center modal-title fs-5" id="exampleModalLabel">
+                                                    ADVERTENCIA</h1>
+
+                                            </div>
+                                            <div class="modal-body">
+                                                ¿ está seguro que desea eliminar esta experiencia ? </div>
+                                            <div class="modal-footer">
+
+                                                <button type="button" class="btn mx-auto btn-secondary"
+                                                    data-bs-dismiss="modal">volver</button>
+                                                <button class="btn mx-auto text-center btn-danger" (click)="delete()"
+                                                    type="button" *ngIf="isLogged">
+                                                    Eliminar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn col text-center btn-outline-warning"
+                                    routerLink="/editarexperi/{{trabajo.id}}" *ngIf="isLogged">
+                                    <i *ngIf="isLogged" class='bx bxs-edit-alt '></i>
+                                </button>
+
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h6> {{trabajo.compania}}</h6>
+                                    <p>Tareas a desempeñar:</p>
+                                    <p>{{trabajo.tareas}} </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>

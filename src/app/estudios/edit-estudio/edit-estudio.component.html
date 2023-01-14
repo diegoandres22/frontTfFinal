@@ -1,0 +1,54 @@
+
+<!-- nav -->
+<nav class="navbar " id="navbar">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+            <img src="./../../assets/imagenes/argentina.png">
+        </a>
+
+        <!-- Button modal -->
+        <button type="button" class="btn btn-danger botonSalir" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a
+                routerLink="/index">ir al inicio</a>
+        </button>
+
+    </div>
+</nav>
+
+
+<!-- contenedor experiencias laborales -->
+<div class="contenedor-experiencias" id="EXPERIENCIAS">
+    <div class="container text-center">
+        <br><br>
+        <div class="row text-center ">
+            <div class="col">
+                <h2> Nuevo estudio</h2>
+            </div>
+
+        </div>
+        <br><br>
+        <form (ngSubmit)="edit()" novalidate #f="ngForm">
+            <div class="mb-3">
+                <label form="colegio">colegio </label>
+                <input type="text" class="form-control" id="colegio" name="colegio" placeholder="colegio"
+                     [(ngModel)]="estulab.colegio" required>
+            </div>
+            <div class="mb-3">
+                <label for="fechainiyfin">fecha de inicio y fecha al finalizar</label>
+                <input type="text" class="form-control" placeholder="AAAA-MM-DD / AAAA-MM-DD"
+                    id="fechainiyfin" name="fechainiyfin" 
+                    [(ngModel)]="estulab.fechainiyfin" required>
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">titulo obtenido</label>
+                <input type="text" class="form-control" placeholder="titulo_obtenido" id="titulo_obtenido" name="titulo_obtenido"
+                      [(ngModel)]="estulab.titulo_obtenido" required>
+            </div>
+            <div class="mb-3">
+                <label for="img_instituto">logo del instituto</label>
+                <input type="text" class="form-control" placeholder="logo del instituto" id="img_instituto" name="img_instituto"
+                    [(ngModel)]="estulab.img_instituto" required>
+            </div>
+            <button class="btn btn-success"> añadir nuevo estudio </button>
+        </form>
+    </div>
+</div>

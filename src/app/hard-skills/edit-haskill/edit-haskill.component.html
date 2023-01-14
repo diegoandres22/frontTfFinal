@@ -1,0 +1,51 @@
+
+<!-- nav -->
+<nav class="navbar " id="navbar">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+            <img src="./../../assets/imagenes/argentina.png">
+        </a>
+
+        <!-- Button modal -->
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a
+                routerLink="/index">ir al inicio</a>
+        </button>
+
+    </div>
+</nav>
+
+
+
+<div class="contenedor-experiencias" id="EXPERIENCIAS">
+    <div class="container text-center">
+        <br><br>
+        <div class="row text-center ">
+            <div class="col">
+                <h2> Editar soft skill</h2>
+            </div>
+
+        </div>
+        <br><br>
+        <form (ngSubmit)="editar()" novalidate #f="ngForm">
+            <div class="mb-3">
+                <label form="img_hard_skill"> logo de la skill </label>
+                <input type="text" class="form-control" id="img_hard_skill" name="img_hard_skill"
+                    placeholder="url del logo" [(ngModel)]="haskill.img_hard_skill" required>
+            </div>
+            <div class="mb-3">
+                <label form="nombre_hard_skill"> nombre de la skill </label>
+                <input type="text" class="form-control" id="nombre_hard_skill" name="nombre_hard_skill"
+                    placeholder="nombre de la skill a añadir" [(ngModel)]="haskill.nombre_hard_skill" required>
+            </div>
+            <div class="mb-3">
+                <label for="liquido">nombre de la soft skill</label>
+                <input type="text" class="form-control" placeholder="nombre de la hard skill" id="liquido"
+                    name="liquido" [(ngModel)]="haskill.liquido" required>
+            </div>
+
+
+            <button class="btn btn-success"> Terminar edición de la skill </button>
+        </form>
+
+    </div>
+</div>

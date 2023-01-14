@@ -1,0 +1,9 @@
+<!-- Button modal -->
+<button type="button" class="btn btn-primary botonabre" *ngIf="!islogged" (click)="Login()" data-bs-toggle="modal"
+data-bs-target="#staticBackdrop">
+INGRESAR
+</button>
+<button type="button" class="btn btn-danger botonabre" *ngIf="islogged"  (click)="onLogOut()"
+data-bs-target="#staticBackdrop">
+CERRAR SESION
+</button>

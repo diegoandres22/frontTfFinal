@@ -1,0 +1,82 @@
+<div class="contenedor-estudios" id="ESTUDIOS">
+    <div class="estudios">
+        <div class="container text-center">
+            <div class="text-center fileTituloYboto ">
+
+                    <h2> Formación academica </h2>
+                
+                    <button class="btn text-center btn-outline-info " routerLink="/newEstu" *ngIf="isLogged">
+                        <i *ngIf="isLogged" class=' bx bx-plus-circle'></i>
+                    </button>
+                
+            </div>
+        </div>
+
+        <ul class="conteneabuelo">
+            <li *ngFor="let estudy of estu">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-12 col-sm-2 ">
+                            <img class="img-fluid" [src]="estudy.img_instituto">
+                        </div>
+                        <div class="col-12 col-sm-10 ">
+                            <div class="row">
+                                <div class="col">
+                                    <h5>{{estudy.colegio}}</h5>
+                                </div>
+                                <div class="col">
+                                    <h6> {{estudy.fechainiyfin}} </h6>
+                                </div>
+                                
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn col text-center btn-outline-danger"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModalestu" (click)="tomaId(estudy.id)"
+                                    *ngIf="isLogged">
+                                    <i *ngIf="isLogged" class='bx bxs-trash '></i>
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModalestu" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content text-center">
+                                            <div class="modal-header text-center">
+                                                <h1 class=" text-center modal-title fs-5" id="exampleModalLabel">
+                                                    ADVERTENCIA</h1>
+
+                                            </div>
+                                            <div class="modal-body">
+                                                ¿ está seguro que desea eliminar este estudio ? </div>
+                                            <div class="modal-footer">
+
+                                                <button type="button" class="btn mx-auto btn-secondary"
+                                                    data-bs-dismiss="modal">volver</button>
+                                                    <button class="btn mx-auto text-center btn-danger"
+                                                    (click)="delete()" type="button" *ngIf="isLogged">
+                                                    Eliminar
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn col text-center btn-outline-warning"
+                                    routerLink="/editarEstudi/{{estudy.id}}" *ngIf="isLogged">
+                                    <i *ngIf="isLogged" class='bx bxs-edit-alt '></i>
+                                </button>
+                           
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <p>Titulo obtenido :</p>
+                                    <h6>{{estudy.titulo_obtenido}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>

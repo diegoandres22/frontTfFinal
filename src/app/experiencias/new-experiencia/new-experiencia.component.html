@@ -1,0 +1,58 @@
+<!-- nav -->
+<nav class="navbar " id="navbar">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+            <img src="./../../assets/imagenes/argentina.png">
+        </a>
+
+        <!-- Button modal -->
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a
+                routerLink="/index">ir al inicio</a>
+        </button>
+
+    </div>
+</nav>
+
+
+<!-- contenedor experiencias laborales -->
+<div class="contenedor-experiencias" id="EXPERIENCIAS">
+    <div class="container text-center ">
+        <div class="row">-</div>
+        <br><br>
+        <div class="row  ">
+            <div class="col-12 ">
+                <h2> Nueva experiencia laboral</h2>
+            </div>
+        </div>
+        <br>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="mb-3">
+                    <label form="puesto">Puesto </label>
+                    <input type="text" class="form-control" id="puesto" name="puesto" placeholder="Puesto"
+                        [(ngModel)]="puesto" required>
+                </div>
+                <div class="mb-3">
+                    <label for="fechainiyfina">Fecha de inicio y fin</label>
+                    <input type="text" class="form-control" placeholder="AAAA-MM-DD / AAAA-MM-DD" id="fechainiyfina"
+                        name="fechainiyfina" [(ngModel)]="fechainiyfina" required>
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Nombre de la empresa</label>
+                    <input type="text" class="form-control" placeholder="Nombre de la empresa" id="compania"
+                        name="compania" [(ngModel)]="compania" required>
+                </div>
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Logo de la empresa</label>
+                    <input type="text" class="form-control" placeholder="logo de la empresa" id="imgtrabajo"
+                        name="imgtrabajo" [(ngModel)]="imgtrabajo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="tareas">Tareas a desempeñar</label>
+                    <input type="text" class="form-control" placeholder="tareas a desempeñar" id="Tareas" name="Tareas"
+                        [(ngModel)]="tareas" required>
+                </div>
+                <button class="btn btn-success"> Añadir nueva experiencia </button>
+            </form>
+        
+    </div>
+</div>

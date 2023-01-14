@@ -1,0 +1,60 @@
+<!-- nav -->
+<nav class="navbar " id="navbar">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+            <img src="./../../assets/imagenes/argentina.png">
+        </a>
+
+        <!-- Button modal -->
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a
+                routerLink="/index">ir al inicio</a>
+        </button>
+
+    </div>
+</nav>
+
+
+<!-- contenedor experiencias laborales -->
+<div class="contenedor-experiencias" id="EXPERIENCIAS">
+    <div class="container text-center">
+       <br><br>
+        <div class="row text-center ">
+            <div class="col">
+                <h2> Editar experiencia laboral</h2>
+            </div>
+
+        </div>
+        <br>
+        <form (ngSubmit)="edit()" novalidate #f="ngForm">
+            <div class="mb-3">
+                <label for="compania" >nombre de la empresa</label>
+                <input type="text" class="form-control" placeholder="Nombre de la empresa" id="compania" name="compania"
+                    [(ngModel)]="explab.compania" required>
+            </div>
+            <div class="mb-3">
+                <label for="tareas">tareas a desempeñar</label>
+                <input type="text" class="form-control" placeholder="tareas a desempeñar" id="Tareas" name="Tareas"
+                    [(ngModel)]="explab.tareas" required>
+            </div>
+            <div class="mb-3">
+                <label for="fechainiyfina">fecha de inicio y fecha de fin</label>
+                <input type="text" class="form-control" placeholder="AAAA-MM-DD / AAAA-MM-DD" id="fechainiyfina"
+                    name="fechainiyfina" [(ngModel)]="explab.fechainiyfina" required>
+            </div>
+            <div class="mb-3">
+                <label form="imgtrabajo">logo de la empresa </label>
+                <input type="text" class="form-control" id="imgtrabajo" name="imgtrabajo" placeholder="imgtrabajo"
+                    [(ngModel)]="explab.imgtrabajo" required>
+            </div>
+            <div class="mb-3">
+                <label form="puesto">puesto </label>
+                <input type="text" class="form-control" id="puesto" name="puesto" placeholder="Puesto"
+                    [(ngModel)]="explab.puesto" required>
+            </div>
+           
+          
+            
+            <button class="btn btn-success"> Guardar experiencia </button>
+        </form>
+    </div>
+</div>

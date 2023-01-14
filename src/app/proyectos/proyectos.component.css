@@ -1,0 +1,57 @@
+/* proyectos */
+
+.contieneProyectos {
+    width: 90vw;
+    height: auto;
+}
+
+.titulo {
+    font-size: 3em;
+    color: var(--colorLetrasTrabajoEstudy);
+
+}
+.conteli{
+    display: flex;
+    gap: .8em;
+    flex-wrap: wrap;
+}
+.cajaProyectos {
+
+    width: 350px;
+    height: 300px;
+    margin: 0 auto 0 auto;
+    transition: all 0.4s;
+}
+
+.cajaProyectos img {
+    width: 250px;
+    height: 200px;
+
+}
+
+.cajaProyectos:hover {
+
+    transform: scale(1.4);
+
+}
+.fileTituloYboto{
+    display: flex;
+align-items: center;
+justify-content: center;
+gap: .5em;
+
+}
+
+#exampleModalpro{
+    top: 20vh;
+    color: black;
+}
+
+.cajaPro, .cajaProyectos{
+    list-style: none;
+    width: 350px;
+    height: 300px;
+    margin: 0 auto 0 auto;
+}
+
+

@@ -1,0 +1,57 @@
+
+/*  acerca de  parrafo*/
+.contenedorAcercaDE {
+
+    color: aliceblue;
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    padding-top: 5%;
+    background-image: linear-gradient(to top,rgb(12, 8, 78),rgb(12, 8, 78),rgb(12, 8, 78), rgb(12, 8, 78), rgb(12, 8, 78), rgb(12, 8, 78), rgb(12, 8, 78),rgb(12, 8, 78),  #050036, #06001b, #000000);
+
+}
+
+.col-2 img {
+    width: 140px;
+    user-select: none;
+    background-position: center bottom;
+
+    border-radius: 50%;
+
+}
+
+.col-10 , .col-xxl-10 {
+    margin-top: 5%;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+@media (max-width:900px) {
+    
+    .col-10 {
+        font-size: .8em;
+    }
+
+    .foto-y-nombre{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foto-y-nombre h2, .foto-y-nombre h3{
+        font-size: 25px !important;
+    }
+
+
+    .padre_acerca{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .otro-para-flex{
+        margin-top: 10%;
+    }
+    
+}

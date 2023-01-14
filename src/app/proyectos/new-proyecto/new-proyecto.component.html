@@ -1,0 +1,59 @@
+
+<!-- nav -->
+<nav class="navbar " id="navbar">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+            <img src="./../../assets/imagenes/argentina.png">
+        </a>
+
+        <!-- Button modal -->
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a
+                routerLink="/index">ir al inicio</a>
+        </button>
+
+    </div>
+</nav>
+
+
+
+<div class="contenedor-experiencias" id="EXPERIENCIAS">
+    <div class="container text-center">
+        <br>
+        <br>
+      
+        
+        <div class="row text-center ">
+            <div class="col">
+                <h2> Nuevo proyecto</h2>
+            </div>
+
+        </div>
+        <br>
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="mb-3">
+                <label form="img1"> Primera imagen a mostrar </label>
+                <input type="text" class="form-control" id="img1" name="img1"
+                    placeholder="1re imagen" [(ngModel)]="img1" required>
+            </div>
+            <div class="mb-3">
+                <label for="img2">Segunda imagen a mostrar</label>
+                <input type="text" class="form-control" placeholder="2da imagen" id="img2"
+                    name="img2" [(ngModel)]="img2" required>
+            </div>
+            <div class="mb-3">
+                <label for="img3">Tercera imagen a mostrar</label>
+                <input type="text" class="form-control" placeholder="3ra imagen" id="img3"
+                    name="img3" [(ngModel)]="img3" required>
+            </div>
+            <div class="mb-3">
+                <label for="url">Url del sitio a donde desea redirigir</label>
+                <input type="text" class="form-control" placeholder="url del sitio" id="url"
+                    name="url" [(ngModel)]="url" required>
+            </div>
+
+
+            <button class="btn btn-success"> Añadir nuevo proyecto </button>
+        </form>
+
+    </div>
+</div>

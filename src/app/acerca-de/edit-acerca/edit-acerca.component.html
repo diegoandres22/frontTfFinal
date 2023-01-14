@@ -1,0 +1,68 @@
+<!-- nav -->
+<nav class="navbar " id="navbar">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+            <img src="./../../assets/imagenes/argentina.png">
+        </a>
+
+        <!-- Button modal -->
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a
+                routerLink="/index">ir al inicio</a>
+        </button>
+
+    </div>
+</nav>
+
+
+<!-- contenedor experiencias laborales -->
+<div class="contenedor-experiencias" id="EXPERIENCIAS">
+    <div class="container text-center">
+        <br><br><br>
+        <div class="row text-center ">
+            <div class="col">
+                <h2> Editar acerca de</h2>
+            </div>
+
+        </div>
+        <form (ngSubmit)="edit()" novalidate #f="ngForm">
+            <div class="mb-3">
+                <label form="nombre">nombre completo</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre"
+                     [(ngModel)]="persona.nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="titulo">profesion</label>
+                <input type="text" class="form-control" placeholder="profesion"
+                    id="titulo" name="titulo" 
+                    [(ngModel)]="persona.titulo" required>
+            </div>
+            <div class="mb-3">
+                <label for="parrafo_f" class="form-label">primer parrafo a mostrar</label>
+                <input type="text" class="form-control" placeholder="parrafo_f" id="parrafo_f" name="parrafo_f"
+                      [(ngModel)]="persona.parrafo_f" required>
+            </div>
+            <div class="mb-3">
+                <label for="parrafo_f">segundo parrafo a mostrar</label>
+                <input type="text" class="form-control" placeholder="segundo parrafo a mostrar" id="parrafo_s" name="parrafo_s"
+                    [(ngModel)]="persona.parrafo_s" required>
+            </div>
+            <div class="mb-3">
+                <label for="imgperfil">imagen de perfil</label>
+                <input type="text" class="form-control" placeholder="imagen del perfil"
+                    id="imgperfil" name="imgperfil" 
+                    [(ngModel)]="persona.imgperfil" required>
+            </div>
+            <div class="mb-3">
+                <label for="imgbanner" class="form-label">imagen del banner</label>
+                <input type="text" class="form-control" placeholder="imagen del banner" id="imgbanner" name="imgbanner"
+                      [(ngModel)]="persona.imgbanner" required>
+            </div>
+            <div class="mb-3">
+                <label for="curriculum">direccion de url del curriculum</label>
+                <input type="text" class="form-control" placeholder="url del curriculum" id="curriculum" name="curriculum"
+                    [(ngModel)]="persona.curriculum" required>
+            </div>
+            <button class="btn btn-success"> Terminar edición y guardar </button>
+        </form>
+    </div>
+</div>

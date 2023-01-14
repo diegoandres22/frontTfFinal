@@ -1,0 +1,87 @@
+/* navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    background-color:#0c084e;
+    width: 100vw;
+    height: 75px;
+    z-index: 10000;
+}
+
+
+/* logo nav */
+.container-fluid a img {
+    user-select: none;
+    width: 9em;
+
+}
+
+
+.nav-item {
+
+    display: flex;
+    margin: auto;
+
+}
+
+.nav-item a {
+    color: aliceblue !important;
+}
+
+/* hover de las redes sociales */
+#instagram:hover {
+    background: linear-gradient(198deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border-radius: 10px;
+    color: black !important;
+}
+
+#linkedin:hover {
+    background: linear-gradient(198deg, rgb(11, 0, 172) 0%, rgb(78, 80, 238) 50%, rgb(3, 0, 179) 100%);
+    border-radius: 10px;
+    color: black !important;
+}
+
+#Github:hover {
+    background: linear-gradient(198deg, rgb(3, 0, 41) 0%, rgb(78, 80, 238) 50%, rgb(1, 0, 56) 100%);
+    border-radius: 10px;
+    color: black !important;
+}
+
+
+@media (max-width:900px) {
+
+
+
+    #navbar {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        font-size: .9em;
+        height: 100px;
+        z-index: 10000;
+    }
+
+    .padredelul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item {
+        position: relative;
+
+    }
+
+
+}
+
+@media (max-width:500px) {
+    .container-fluid a img {
+        position: relative;
+        top: 10px;
+        left: -80px;
+    }
+
+
+}

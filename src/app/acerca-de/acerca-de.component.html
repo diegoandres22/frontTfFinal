@@ -1,0 +1,36 @@
+<!-- contenedor acerca de mi -->
+<div class="contenedorAcercaDE" id="ACERCA">
+    <div class="acercaDe">
+        <div class="container text-center">
+            <div class="row text-center ">
+
+                <button class="btn btn-outline-warning " routerLink="/editar/1" *ngIf="isLogged">
+                    Editar
+                </button>
+
+
+            </div>
+
+            <div class="row padre_acerca" *ngFor="let die of dieguito">
+                <div class="col-2 foto-y-nombre">
+                    <img [src]="die.imgperfil">
+                    <div class="otro-para-flex">
+                        <h2>{{die.nombre}}</h2>
+
+                        <h3>{{die.titulo}}</h3>
+                    </div>
+                </div>
+                <div class="col-xxl-10  col-md-10">
+
+                    <p>{{die.parrafo_f}}</p>
+                    <p>
+                        <br>
+                        <br>
+                        {{die.parrafo_s}}
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

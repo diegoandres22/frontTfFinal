@@ -1,0 +1,196 @@
+/* .containerSkills-hard1 {
+
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+
+
+}
+
+.containerSkills-hardCenter2 {
+
+    display: flex;
+    margin: auto;
+    width: 90vw;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+
+
+}
+
+.hardSkills3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tituloHardSkills {
+
+    color: var(--colorLetrasTrabajoEstudy);
+    margin: 0 auto;
+}
+
+.tituloHardSkills h4 {
+    font-size: 3em;
+}
+
+.conteneHtml p {
+    font-size: 1em;
+}
+*/
+.crecer{
+
+    margin: 1.5em 0;
+}
+.conteneHtml {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    color: var(--colorLetrasTrabajoEstudy);
+   
+} 
+.titulosoftskills{
+    color: var(--colorLetrasTrabajoEstudy);
+   
+    
+}
+.container ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5em; 
+    margin-top: 2em;
+}
+
+
+.titulosoftskills{
+    font-size: 3em;
+}
+.contenefoto {
+    position: relative;
+    width: 170px;
+    height: 170px;
+}
+
+.contenefoto img {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.conteneliquido {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 110px;
+    height: 250px;
+    z-index: -1;
+
+}
+
+.liquido {
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 45px;
+    background: var(--colorpecera);
+    animation: animate 2s ease-in-out infinite;
+
+}
+
+.conteneBotones {
+    display: flex;
+    position: relative;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.fileTituloYboto{
+    display: flex;
+align-items: center;
+justify-content: center;
+gap: .5em;
+
+}
+#exampleModalhs{
+    top: 20vh;
+    color: black;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(1% 73%, 9% 66%, 21% 59%, 33% 56%, 47% 59%, 59% 65%, 68% 70%, 81% 69%, 92% 61%, 99% 51%, 100% 100%, 0 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 51%, 6% 60%, 14% 68%, 29% 71%, 47% 63%, 57% 54%, 68% 51%, 81% 51%, 94% 58%, 100% 66%, 100% 100%, 0 100%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

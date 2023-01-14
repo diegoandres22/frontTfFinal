@@ -1,0 +1,56 @@
+/* nav lateral */
+
+.contenedor-navLateral {
+    width: 50px;
+    height: 85vh;
+    position: fixed;
+    z-index: 100;
+    left: 5px;
+    top: 80px;
+
+}
+
+.navLateral {
+    background-color: #0c084e;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.navLateral a {
+    color: aliceblue;
+}
+
+.navLateral a :hover {
+    color: var(--colorhover);
+}
+
+@media (max-width: 900px) {
+
+    .contenedor-navLateral {
+        width: 100vw;
+        height: 85px;
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 100px;
+
+
+    }
+
+    .navLateral {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: none;
+        align-items: center;
+        background: linear-gradient(to top, transparent, #0c084e, #0c084e);
+    }
+    .navLateral a i {
+     font-size:24px !important;
+     
+    }
+}

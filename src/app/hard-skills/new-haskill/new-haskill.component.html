@@ -1,0 +1,52 @@
+
+<!-- nav -->
+<nav class="navbar " id="navbar">
+    <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+            <img src="./../../assets/imagenes/argentina.png">
+        </a>
+
+        <!-- Button modal -->
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a
+                routerLink="/index">ir al inicio</a>
+        </button>
+
+    </div>
+</nav>
+
+
+
+<div class="contenedor-experiencias" id="EXPERIENCIAS">
+    <div class="container text-center">
+        <br>
+      
+        <br>
+        <div class="row text-center ">
+            <div class="col">
+                <h2> Nueva soft skill</h2>
+            </div>
+
+        </div>
+        <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <div class="mb-3">
+                <label form="img_hard_skill"> logo de la skill </label>
+                <input type="text" class="form-control" id="img_hard_skill" name="img_hard_skill"
+                    placeholder="url del logo" [(ngModel)]="img_hard_skill" required>
+            </div>
+            <div class="mb-3">
+                <label for="nombre_hard_skill">nombre de la hard skill</label>
+                <input type="text" class="form-control" placeholder="nombre_hard_skill" id="nombre_hard_skill"
+                    name="nombre_hard_skill" [(ngModel)]="nombre_hard_skill" required>
+            </div>
+            <div class="mb-3">
+                <label for="liquido">hexadesimal del color del liquido interno</label>
+                <input type="text" class="form-control" placeholder="colocar hexadesimal" id="liquido"
+                    name="liquido" [(ngModel)]="liquido" required>
+            </div>
+
+
+            <button class="btn btn-success"> Añadir nueva skill </button>
+        </form>
+
+    </div>
+</div>

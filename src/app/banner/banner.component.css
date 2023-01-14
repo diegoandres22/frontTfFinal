@@ -1,0 +1,301 @@
+/* baner de fondo */
+.baner {
+    width: 90vw;
+    height: 90vh;
+    margin: 100px auto auto auto;
+
+}
+
+.imagen-baner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    user-select: none;
+    background-color: rgb(0, 0, 0);
+
+
+}
+
+.imagen-baner::before {
+    position: absolute;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.507);
+    background-image: linear-gradient(to bottom, rgba(12, 8, 78, 0), rgba(12, 8, 78, 0), rgba(12, 8, 78, 0), rgba(12, 8, 78, 0), rgba(12, 8, 78, 0), rgba(12, 8, 78, 0), #000000dd, #000000ff);
+    content: "";
+    width: 100%;
+    height: 100%;
+
+}
+
+.imagen-banerdefi {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    user-select: none;
+}
+
+
+.contenedor-imagen,
+.contenedor-hechizos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+
+}
+
+.imagen {
+    position: relative;
+    width: 80vw;
+    height: 100vh;
+    margin: auto auto 0 auto;
+
+}
+
+.man {
+    width: auto;
+    margin: auto auto auto 60%;
+    height: 80%;
+
+}
+
+
+
+.hechizos {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    margin: auto auto auto 25%;
+    display: flex;
+
+
+}
+
+.hechizo1 {
+    width: 320px;
+    height: 320px;
+    margin: auto auto 20px auto;
+    opacity: .9;
+
+}
+
+.hechizo2 {
+    width: 200px;
+    height: 200px;
+    margin: auto auto 75px auto;
+    opacity: .9;
+
+}
+
+.hechizo1 {
+    animation: turn1 100s linear infinite;
+}
+
+.hechizo2 {
+    animation: turn2 100s linear infinite;
+}
+
+@keyframes turn1 {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes turn2 {
+    to {
+        transform: rotate(-1turn);
+    }
+}
+
+/* parrafo baner */
+
+.contenedor-parrafo {
+
+    position: absolute;
+    top: 180px;
+    left: 5%;
+    width: 50%;
+    height: 70%;
+    color: aliceblue;
+    display: flex;
+
+}
+
+.parrafo {
+    display: flex;
+    margin-left: 1.8em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.parrafo p {
+    text-align: center;
+}
+
+.hi {
+    letter-spacing: .5em;
+}
+
+/* animacion profesional/programador/desarrollador/ */
+
+
+.contienetodo {
+
+    height: 35px;
+    width: auto;
+    overflow: hidden;
+
+    margin-bottom: 50px;
+}
+
+.contienemeno {
+    animation: mueverico 20s linear infinite;
+
+}
+
+
+@keyframes mueverico {
+    0% {
+        transform: translateY(0);
+    }
+
+    5% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-50px);
+    }
+
+    30% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(-90px);
+    }
+
+    55% {
+        transform: translateY(-90px);
+    }
+
+    75% {
+        transform: translateY(-140px);
+    }
+
+    80% {
+        transform: translateY(-140px);
+    }
+
+    100% {
+        transform: translateY(-0px);
+    }
+}
+
+/* botom descargar cv */
+.parrafo .buttom {
+    background: turquoise;
+    color: rgb(24, 30, 36);
+    display: inline-block;
+    font-size: .7em;
+    padding: .8rem 1.8rem;
+    border-radius: 3rem;
+    min-width: 200px;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.527);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.295);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 35px rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        transform: scale(.99);
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.205);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px) {
+
+    .hechizo1,
+    .hechizo2,
+    .man {
+        display: none;
+    }
+
+    #BANER {
+        display: flex;
+
+    }
+
+    .parrafo p {
+        font-size: .9em;
+
+    }
+    .baner {
+        height: 50vh;
+    
+    }
+
+/* allalalaa */
+/* parrafo baner */
+
+.contenedor-parrafo {
+
+    position: absolute;
+    top: none;
+    left: none;
+    width: 90%;
+    height: auto;
+    color: aliceblue;
+    display: flex;
+
+justify-content: center;
+align-items: center;
+
+}
+
+.parrafo {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    
+}
+
+.parrafo .buttom {
+    font-size: .5em;
+    padding: .6rem 1.4rem;
+    border-radius: 2rem;
+    min-width: 100px;
+}
+
+
+}

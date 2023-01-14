@@ -1,0 +1,71 @@
+
+/* experiencias laborales */
+.contenedor-experiencias {
+    
+    color: aliceblue;
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.experiencias {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+   
+}
+.experiencias ul li{
+
+list-style: none;
+}
+
+
+.experiencias1
+{
+    display: flex;
+    padding: 50px;
+   
+
+}
+
+.experiencias1 img
+ {
+    height: 90px;
+
+}
+
+.experienciasP
+{ 
+    margin-left: 20px;
+    margin-right: 40px;
+    font-size: 1em;
+}
+
+.titu-fecha
+ {
+    display: flex;
+    justify-content: space-between;
+}
+.bx {
+   font-size: 2em;
+}
+.conteneabuelo{
+    gap: 3em;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 3em;  
+}
+#exampleModalex{
+    top: 20vh;
+    color: black;
+}
+.fileTituloYboto{
+    display: flex;
+align-items: center;
+justify-content: center;
+gap: .5em;
+
+}
